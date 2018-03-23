@@ -1,0 +1,198 @@
+.settingsWindow{
+	display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.row {
+	background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+	padding-bottom: 30px;
+    width: 80%;
+	border-bottom: 1px solid #ccc;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.settingsContent{
+	background-color: #fefefe;
+	margin: auto;
+    padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+    width: 80%;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+	min-height:400px;
+}
+.settingsContent table{
+	width:100%;
+}
+.settingsContent table td:last-child{
+	width:120px;
+}
+.tabs{
+	float: left;
+	overflow: hidden;
+}
+.tabs button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.tabs button:hover {
+	background-color: #A9A9A9;
+    text-decoration: none;
+    cursor: pointer;
+}
+.tab button.active {
+    background-color: #ccc;
+}
+.column {
+    float: right;
+}
+.material-icons{
+	border: none;
+	font-size:18px;
+    outline: none;
+	background-color:inherit;
+}
+.material-icons:hover{
+	border: none;
+	background-color: #A9A9A9;
+}
+.displayData{
+	width:100%;
+	margin:auto;
+	overflow:auto;
+}
+.displayData .name{
+	padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+.displayData input[type=text], select, textarea{
+	padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+	width:100%;
+}
+.displayData input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+	width:100%;
+}
+.displayData input[type=submit]:hover {
+    background-color: #45a049;
+}
+.displayData .col-25 {
+    float: left;
+    width: 25%;
+}
+
+.displayData .col-75 {
+    float: left;
+    width: 75%;
+}
+.displayData .rows{
+	display:none;
+}
+.displayData .rows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.displayData input[type=checkbox] {
+	display: none;
+}
+
+.displayData input[type=checkbox] + label {
+	display: inline-block;
+	background-color: #DB574D;
+	color: white;
+	font-family: sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+	text-transform: uppercase;
+	width: 80px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+.displayData input[type=checkbox] + label,
+.displayData input[type=checkbox] + label i {
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+.displayData input[type=checkbox]:checked + label {
+	background-color: #67B04F;
+}
+
+.displayData input[type=checkbox] + label:before,
+.displayData input[type=checkbox] + label:after,
+.displayData input[type=checkbox] + label i {
+	width: 50%;
+	display: inline-block;
+	height: 100%;
+	text-align: center;
+}
+
+.displayData input[type=checkbox] + label:before {
+	content: attr(data-text-true);
+}
+
+.displayData input[type=checkbox] + label:after {
+	content: attr(data-text-false);
+}
+
+.displayData input[type=checkbox] + label i {
+	top: 10%;
+	background-color: white;
+	height: 80%;
+	left: 5%;
+	position: absolute;
+	width: 45%;
+}
+
+.displayData input[type=checkbox]:checked + label i {
+	left: 50%;
+}

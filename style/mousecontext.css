@@ -1,0 +1,28 @@
+.context-menu {
+	display: none;
+	position: absolute;
+	z-index: 10;
+	background-color:#ffffff;
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom:5px;
+	border: 2px solid #6e6e6e;
+}
+.context-menu--active {
+	display: block;
+}
+.for-worker{
+	display: none;
+}
+.for-worker--active{
+	display: block;
+}
+.for-task{
+	display: none;
+}
+.for-task--active{
+	display: block;
+}
+.context-menu__item{
+	padding-top:5px;
+}
